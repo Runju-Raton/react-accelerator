@@ -1,10 +1,16 @@
+import { useState } from "react";
 
 function App() {
+  const [number, setNumber] = useState(1);
+
   return (
     <>
-      <div>
-        <h2 className="text-3xl font-bold underline">Hello World!</h2>
-      </div>
+      <h1>{number}</h1>
+      <button onClick={() => {
+        setNumber(number + 1);
+        setNumber(number + 1);
+        setNumber(number + 1);
+      }}>+3</button>
     </>
   )
 }
